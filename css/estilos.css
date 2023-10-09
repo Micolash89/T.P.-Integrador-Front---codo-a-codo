@@ -12,13 +12,14 @@
 
 .body__section--header {
   margin: 0 !important;
+  
 }
 
 .liHeader__a:hover {
   background-color: #ffc107;
   color: black;
+  border-radius: 12px;
 }
-
 
 .header__a--h1 {
   color: white;
@@ -31,49 +32,59 @@
 .body__section {
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
-.body__section--a{
+.body__section--a {
   border-radius: 100%;
   display: none;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.911);
   color: white;
   position: fixed;
   font-size: 2rem;
   z-index: 1;
   left: 88%;
-  top: 95%;
+  top: 82%;
   box-shadow: -3px 3px 15px 0px rgba(255, 255, 255, 0.514);
 }
 
-.body__section--a:hover{
+.body__section--a:hover {
   color: white;
   border: 1px solid white;
-  background-color: black;
-
+  background-color: rgba(0, 0, 0, 0.699);
 }
 
-.body__section--a:active{
+.body__section--a:active {
   background-color: black !important;
   color: white !important;
 }
 
 .body__section--a:visited {
   background-color: black !important;
-  color: white ;
+  color: white;
 }
+
 
 /* carousel */
 
-.main__carousel {
-  padding-top: 100px;
+
+
+.carousel {
+  padding-top: 44px !important;
+  width: 100%;
+  max-height: 1020px;
+  overflow: hidden;
+}
+
+.carousel__div--video{
+ margin: auto;
 }
 
 .carousel__div--img {
-  padding: 0 100px 0 100px;
+  margin: 0 auto;
+  object-fit: contain;
+  overflow: hidden;
   width: 50%;
-  margin: auto;
 }
 
 .carousel__button {
@@ -84,6 +95,11 @@
 
 .main__cards {
   padding: 12px 12%;
+  padding-top: 8px;
+}
+
+#coach{
+  padding-top: 70px;
 }
 
 .main__cards--title {
@@ -105,11 +121,32 @@
 .cardImg {
   width: 100%;
   border-radius: 4px;
+ 
+  
+}
+
+.cardContainer1,.cardContainer2,.cardContainer3{
+  max-height: 304.250px;
+  overflow: hidden;
+}
+
+.cardContainer3{
+  padding-top: 12%;
+  background-color: black;
 }
 
 .card-body {
   padding: 0;
   border-radius: 4px !important;
+}
+
+.div1Cards__container,
+.div3Cards__container {
+  height: 100%;
+}
+
+.div2Cards__container {
+  height: 100%;
 }
 
 /* mapa */
@@ -121,6 +158,14 @@
   height: 450px;
   /* max-width: 600px; */
   max-height: 450px;
+}
+
+#mapaSection{
+  padding-top: 57px;
+}
+
+.mainMapa__h2{
+  margin: 15px 0;
 }
 
 .main__mapa {
@@ -160,49 +205,118 @@
   border-color: black;
 }
 
+.formDatos__nombre:focus,
+.formDatos__apellido:focus,
+.formDatos__textArea:focus,
+.formDatos__email:focus {
+  box-shadow: black !important;
+  border-color: black;
+}
+
 /* footer */
 
 .footer__div--span {
   color: white;
 }
 
+.footerLi__a{
+  color: #ffc107;
+  font-size: 2rem
+}
+
+.footer__ul{
+  display: flex;
+  gap: 12px;
+  margin-right: 50px;
+}
+
 /* mobile */
 
 @media (max-width: 1000px) {
-  .carousel__div--img {
+  .carousel__div--img,.carousel__div--video {
     padding: 0 150px 0 150px;
     width: 75%;
     margin: auto;
   }
 }
 
-@media (max-width: 1238px){
+@media (max-width: 1238px) {
+  .header__a {
+    margin: auto;
+  }
+
+  .cardContainer3{
+    padding-top: 20%;
+    background-color: black;
+  }
+}
+
+@media (max-width: 1174px) {
+  .cardContainer3{
+    padding-top: 25%;
+    background-color: black;
+  }
+
+
+}
+
+@media (max-width:990px) {
+  .botonDespegable{
+    background-color: #ffc107;
+  }
 
   .header__a{
-    margin: auto;
+    margin: 0;
+  }
+
+  .cardContainer3{
+    padding-top: 30%;
+    padding-bottom: 30%;
+    background-color: black;
   }
 
 }
 
+@media (max-width: 767px) {
+
+.div1Cards,.div2Cards,.div3Cards{
+  width: 75%;
+  margin: auto;
+
+}
+
+.cardContainer3{
+   padding:0;
+  
+}
+
+}
 @media (max-width: 860px) {
   .body__section {
     position: static;
   }
 
-  .body__section--a{
+.carousel{
+  padding: 0 !important;
+}
+
+  #coach,#carousel,.main__carousel,.main__carousel--div,#mapaSection{
+    padding: 0;
+  }
+
+  .body__section--a {
     display: block;
   }
 
-  .carousel__div--img {
+  .carousel__div--img,.carousel__div--video {
     padding: 0;
     width: 75%;
     height: 50%;
     margin: auto;
-  }
-
-  .main__carousel {
     padding: 0;
   }
+
+
 
   .main__cards {
     padding: 5%;
@@ -217,13 +331,23 @@
   .header__ul {
     gap: 0 !important;
   }
+  .body__section--a {
+    left: 85%;
+  }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 462px) {
+  
   .header__a--h1 {
     display: none;
   }
 
+  
+  
+}
+@media (max-width: 414px) {
+  
+ 
   .header__a {
     margin-left: 35%;
   }

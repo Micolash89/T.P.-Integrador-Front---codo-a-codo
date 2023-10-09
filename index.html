@@ -10,16 +10,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="icon" href="images/143683787_2658385527794213_5757641695758636935_n.jpg" type="image/png">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body class="body bg-black">
   <!-- encabezado -->
-  <section class="container-fluid body__section " id="header">
+  <section class="container-fluid body__section  " id="header">
 
     <a href="#" class="btn body__section--a"><i class="bi bi-chevron-up"></i></a>
 
-    <header class="d-flex flex-wrap justify-content-center  mb-4 border-bottom body__section--header header" >
+    <!-- <header class="d-flex flex-wrap justify-content-center  mb-4 border-bottom body__section--header header bg-black ">
       <a href="/"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none header__a">
         <img class="header__a--img" src="images/banner--383034803.png" alt="gym piscis">
@@ -31,10 +31,54 @@
         <li class="nav-item  header__ul--li liHeader"><a href="#main" class="nav-link   liHeader__a"
             aria-current="page">Home</a></li>
         <li class="nav-item header__ul--li liHeader"><a href="#coach" class="nav-link liHeader__a">Coachs</a></li>
-        <li class="nav-item header__ul--li liHeader"><a href="#mapa" class="nav-link liHeader__a">Donde Encontrarnos</a></li>
-        <li class="nav-item header__ul--li liHeader"><a href="#form" class="nav-link liHeader__a">Trabaja con nosotros</a></li>
-        <li class="nav-item header__ul--li liHeader"><a href="#footer" class="nav-link liHeader__a">redes Sociales</a></li>
-      </ul>
+        <li class="nav-item header__ul--li liHeader"><a href="#mapa" class="nav-link liHeader__a">Donde Encontrarnos</a>
+        </li>
+        <li class="nav-item header__ul--li liHeader"><a href="#form" class="nav-link liHeader__a">Trabaja con
+            nosotros</a></li>
+        <li class="nav-item header__ul--li liHeader"><a href="#footer" class="nav-link liHeader__a">redes Sociales</a>
+        </li>
+      </ul> -->
+      <!--  -->
+      <nav class="navbar navbar-expand-lg  rounded  container-fluid"
+        aria-label="Eleventh navbar example">
+        <a href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none header__a">
+          <img class="header__a--img" src="images/banner--383034803.png" alt="gym piscis">
+          <span class=""></span>
+          <h1 class="fs-4 header__a--h1">GYM PISCIS</h1>
+        </a>
+        <button class="navbar-toggler botonDespegable" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
+          aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+          
+          
+
+          <div class="collapse navbar-collapse " id="navbarsExample09">
+            <ul class="navbar-nav me-auto gap-5 mb-lg-0 header__ul">
+              <li class="nav-item header__ul--li">
+                <a class="nav-link  liHeader__a" aria-current="page" href="#coach">Coachs</a>
+              </li>
+              <li class="nav-item header__ul--li">
+                <a class="nav-link  liHeader__a" aria-current="page" href="#mapaSection">Donde Encontrarnos</a>
+              </li>
+              <li class="nav-item header__ul--li">
+                <a class="nav-link liHeader__a" href="#form">Trabaja con nosotros</a>
+              </li>
+              <li class="nav-item header__ul--li">
+                <a class="nav-link liHeader__a" href="#footer">Redes Sociales</a>
+              </li>
+              <li class="nav-item header__ul--li">
+                <a class="nav-link disabled liHeader__a" aria-disabled="true">redes Sociales</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
     </header>
   </section>
 
@@ -51,8 +95,10 @@
                   </div> -->
         <div class="carousel-inner carousel ">
           <div class="carousel-item active carousel__div div1carousel ">
-            <img src="images/143683787_2658385527794213_5757641695758636935_n.jpg"
-              class="d-block  carousel__div--img div1carousel__img" alt="...">
+            <!-- <img src="images/143683787_2658385527794213_5757641695758636935_n.jpg"
+              class="d-block  carousel__div--img div1carousel__img" alt="..."> -->
+            <video src="videos/SaveInsta.App - 2687196135866558324.mp4"
+              class="d-block  carousel__div--video div1carousel__img" autoplay loop muted></video>
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -71,6 +117,14 @@
               class="d-block  carousel__div--img div3carousel__img" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel__div div3carousel">
+            <img src="images/194099907_527662038259929_4979332515228959520_n.jpg"
+              class="d-block  carousel__div--img div3carousel__img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>cuarto slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
@@ -98,64 +152,65 @@
       <div class="con row row-cols-1 row-cols-md-3  text-center">
 
         <div class="col main__cards--div div1Cards">
-          <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm div1Cards__container ">
 
             <div class="card-body">
-              <img class="cardImg" src="images/194708292_105735268294193_1303827245424557341_n.jpg" alt="">
+              <div class="cardContainer1">
+                <img class="cardImg" src="images/renzo.jpg" alt="">
+              </div>
 
               <div class="div1Cards__div">
                 <div class="div1Cards__div--div cardsHeader">
-                  <div class="cardsHeader__div">
-                    <button class="cardsHeader__div--button">boton1</button>
-                    <button class="cardsHeader__div--button">boton 2</button>
-                  </div>
-                  <h3 class="cardsHeader__h3">lorem</h3>
+
+                  <h3 class="cardsHeader__h3">Renzo</h3>
                 </div>
-                <p class="div1Cards__div--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel,
-                  maiores dicta voluptatibus sequi fugit modi, necessitatibus voluptatum totam, praesentium architecto
-                  rerum sint! Ullam praesentium aliquam dicta repudiandae et explicabo?</p>
+                <p class="div1Cards__div--p">Renzo, es un entrenador comprometido con la excelencia. Su entusiasmo
+                  contagioso y su conocimiento profundo en la ciencia del ejercicio hacen que las sesiones de
+                  entrenamiento sean tanto efectivas como emocionantes. Renzo siempre encuentra la manera de desafiar a
+                  nuestros miembros a alcanzar su máximo potencial.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col main__cards--div div2Cards">
-          <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card mb-4 rounded-3 shadow-sm div2Cards__container">
 
-            <div class="card-body">
-              <img class="cardImg" src="images/194708292_105735268294193_1303827245424557341_n.jpg" alt="">
+            <div class="card-body div2Cards__body">
+              <div class="cardContainer2">
+                <img class="cardImg" src="images/ulises.jpg" alt="">
+
+              </div>
 
               <div class="div1Cards__div">
                 <div class="div1Cards__div--div cardsHeader">
-                  <div class="cardsHeader__div">
-                    <button class="cardsHeader__div--button">boton1</button>
-                    <button class="cardsHeader__div--button">boton 2</button>
-                  </div>
-                  <h3 class="cardsHeader__h3">lorem</h3>
+
+                  <h3 class="cardsHeader__h3">Ulises</h3>
                 </div>
-                <p class="div1Cards__div--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel,
-                  maiores dicta voluptatibus sequi fugit modi, necessitatibus voluptatum totam, praesentium architecto
-                  rerum sint! Ullam praesentium aliquam dicta repudiandae et explicabo?</p>
+                <p class="div1Cards__div--p">Ulises, aporta una energía juvenil y fresca a nuestras sesiones de
+                  entrenamiento. Su dedicación y habilidades en el fitness son notables. Su enfoque en la diversión y la
+                  variedad garantiza que cada clase sea una experiencia única y emocionante para nuestros miembros.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col main__cards--div div3Cards">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card mb-4 rounded-3 shadow-sm  div3Cards__container">
 
             <div class="card-body">
-              <img class="cardImg" src="images/194708292_105735268294193_1303827245424557341_n.jpg" alt="">
+              <div class="cardContainer3">
 
+                <img class="cardImg" src="images/sergio.PNG" alt="">
+              </div>
+                
               <div class="div1Cards__div">
                 <div class="div1Cards__div--div cardsHeader">
-                  <div class="cardsHeader__div">
-                    <button class="cardsHeader__div--button">boton1</button>
-                    <button class="cardsHeader__div--button">boton 2</button>
-                  </div>
-                  <h3 class="cardsHeader__h3">lorem</h3>
+
+                  <h3 class="cardsHeader__h3">Sergio</h3>
                 </div>
-                <p class="div1Cards__div--p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati vel,
-                  maiores dicta voluptatibus sequi fugit modi, necessitatibus voluptatum totam, praesentium architecto
-                  rerum sint! Ullam praesentium aliquam dicta repudiandae et explicabo?</p>
+                <p class="div1Cards__div--p">Sergio, nuestro dedicado dueño y entrenador principal, es el corazón y alma
+                  de nuestro gimnasio. Con años de experiencia en fitness y una pasión inigualable por el bienestar,
+                  Sergio lidera con ejemplar dedicación. Su enfoque experto y su capacidad para motivar a nuestros
+                  miembros lo convierten en un modelo a seguir dentro y fuera del gimnasio.</p>
               </div>
             </div>
           </div>
@@ -164,8 +219,9 @@
     </section>
 
     <!-- mapa -->
-    <section class="container-fluid main__mapa" id="mapa">
+    <section class="container-fluid main__mapa" id="mapaSection">
       <div class="container-fluid text-center main__mapa--div mainMapa">
+        <h2 class="mainMapa__h2">DONDE ESCONTRARNOS</h2>
         <div class="row mainMapa__div">
           <div class="col mainMapa__div--div">
             <iframe class="mapa"
@@ -202,13 +258,21 @@
 
           <div class=" mb-3 mainForm__input--datos formDatos">
 
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            <input type="text" class="form-control formDatos__nombre" id="exampleFormControlInput1" required
+              placeholder="Nombre">
 
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+            <input type="text" class="form-control formDatos__apellido" id="exampleFormControlInput2" required
+              placeholder="Apellido">
           </div>
           <div class="mb-3">
 
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+            <input type="email" class="form-control formDatos__email" id="exampleFormControlInput2" required
+              placeholder="E-mail">
+
+          </div>
+          <div class="mb-3">
+
+            <textarea class="form-control formDatos__textArea" id="exampleFormControlTextarea1" required rows="3"
               placeholder="¿Sobre qué aspecto del fitness te gustaría aprender o discutir?"></textarea>
             <span>Recuerda asignar un nombre a tu rutina de ejercicios</span>
           </div>
@@ -230,15 +294,12 @@
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer__ul">
-      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#twitter"></use>
-          </svg></a></li>
-      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#instagram"></use>
-          </svg></a></li>
-      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook"></use>
-          </svg></a></li>
+      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+          href="https://www.instagram.com/gympiscis/"><i class="bi bi-instagram"></i></a></li>
+      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+          href="https://www.youtube.com/@Ulises_marrero"><i class="bi bi-youtube"></i></a></li>
+      <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+          href="https://www.facebook.com/gympiscismarrero/"><i class="bi bi-facebook"></i></a></li>
     </ul>
   </footer>
 
