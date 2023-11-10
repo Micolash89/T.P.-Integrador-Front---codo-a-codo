@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM PISCIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="images/143683787_2658385527794213_5757641695758636935_n.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/pagarMesCss.css">
+</head>
+
+<body class="body bg-black">
+    <section class="container-fluid body__section  " id="header">
+
+        <a href="index.html" class="btn body__section--a"><i class="bi bi-chevron-up"></i></a>
+        <nav class="navbar navbar-expand-lg  rounded  container-fluid" aria-label="Eleventh navbar example">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none header__a">
+                <img class="header__a--img" src="images/banner--383034803.png" alt="gym piscis">
+                <span class=""></span>
+                <h1 class="fs-4 header__a--h1">GYM PISCIS</h1>
+            </a>
+            <button class="navbar-toggler botonDespegable" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+
+                <div class="collapse navbar-collapse " id="navbarsExample09">
+                    <ul class="navbar-nav me-auto gap-5 mb-lg-0 header__ul">
+                        <li class="nav-item header__ul--li">
+                            <a class="nav-link  liHeader__a" aria-current="page" href="index.html#coach">Coachs</a>
+                        </li>
+                        <li class="nav-item header__ul--li">
+                            <a class="nav-link  liHeader__a" aria-current="page" href="index.html#mapaSection">Donde
+                                Encontrarnos</a>
+                        </li>
+                        <li class="nav-item header__ul--li">
+                            <a class="nav-link liHeader__a" href="index.html#form">Trabaja con nosotros</a>
+                        </li>
+                        <li class="nav-item header__ul--li">
+                            <a class="nav-link liHeader__a" href="#">Pagar Mes</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        </header>
+    </section>
+
+    <main class="main container">
+        <div class="container-fluid row row-cols-1 row-cols-md-3 text-center main__cards" id="cards">
+
+            <div class=" descuento__Cards">
+
+                <div class=" col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 bg-warning border-warning">
+                            <h4 class="my-0 fw-normal card__body--p" id="card1">Estudiante</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="">Tienen un descuento</p>
+                            <h3 class="card-title pricing-card-title" id="card1-descuento"><span
+                                    id="card1-descuento">80</span>%</h3>
+                            <small class="fw-light text-muted mt-3">* 2 meses - descuento en el segundo mes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-info">
+                        <div class="card-header py-3 bg-warning border-warning">
+                            <h4 class="my-0 fw-normal card__body--p" id="card2">Miembro</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="">Tienen un descuento</p>
+                            <h3 class="card-title pricing-card-title"><span id="card2-descuento">50</span>%</h3>
+                            <small class="fw-light text-muted mt-3">* 1 mes</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3 text-white bg-warning border-warning">
+                            <h4 class="my-0 fw-normal card__body--p" id="card3">Promoción</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="">Tienen un descuento</p>
+                            <h3 class="card-title pricing-card-title" id="card3-descuento"><span
+                                    id="card3-descuento">15</span>%</h3>
+                            <small class="fw-light text-muted mt-3">* 1 mes - no mienbro</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container-fluid mainForm  bg-warning" id="form">
+            <form action="" id="resumen" class="form">
+
+                <div class="container text-center mainForm__header ">
+                    <h2 class="mainForm__header--h2">VALOR DEL MES</h2>
+                    <h3 class="mainForm__header--h3">$ <span id="valorMes">2500</span></h3>
+
+                </div>
+
+                <div class="container mainForm__input">
+
+                    <div class=" mb-3 mainForm__input--datos formDatos">
+
+                        <input type="text" class="form-control formDatos__nombre" id="exampleFormControlInput1" required
+                            placeholder="Nombre">
+
+                        <input type="text" class="form-control formDatos__apellido" id="exampleFormControlInput2"
+                            required placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+
+                        <input type="email" class="form-control formDatos__email" id="exampleFormControlInput2" required
+                            placeholder="E-mail">
+
+                    </div>
+                    <div class="container-fluid select gx-0">
+                        <div class=" container-fluid select__div  mb-3 gx-0">
+                            <label for="cantMeses" class="select__div--label form-label">Cantidad de meses</label>
+                            <input type="number" required min="0" id="cantidadMeses"
+                                class="select__div--input form-control" placeholder="Cantidad">
+                        </div>
+                        <div class="  container-fluid  mb-3 gx-0">
+                            <label for="" class="select__div--label form-label">Disabled select menu</label>
+                            <select id="tipoDescuento" class="select__div--input  form-select">
+                                <option selected>-- seleccione --</option>
+                                <option selected>Estudiante</option>
+                                <option selected>Miembro</option>
+                                <option selected>Promoción</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-dark mt-2 mb-4" role="alert">
+                        Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                    </div>
+
+                    <div class="mainForm__input--button row gx-2">
+                        <div class="col-md mb-3">
+                            <button type="reset" class="btn btn-dark container-fluid mainForm__submit">Borrar</button>
+                        </div>
+                        <div class="col-md mb-3">
+                            <button type="submit" class="btn btn-dark container-fluid mainForm__submit">Resumen</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer" id="footer">
+        <div class="col-md-4 d-flex align-items-center footer__div">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 footer__div--a">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 footer__div--span">© 2023 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer__ul">
+            <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+                    href="https://www.instagram.com/gympiscis/"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+                    href="https://www.youtube.com/@Ulises_marrero"><i class="bi bi-youtube"></i></a></li>
+            <li class="ms-3 footer__ul--li footerLi"><a class="footerLi__a" target="_blank"
+                    href="https://www.facebook.com/gympiscismarrero/"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/javaScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.main {
+  padding-top: 100px;
+}
+
+.mainForm__input--button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.descuento__Cards {
+  display: flex;
+  width: 100% !important;
+  /* justify-content: space-between; */
+  gap: 15px;
+  padding: 0;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.select__div--input {
+}
+
+.mainForm__header--h2 {
+  font-weight: 400;
+}
+.mainForm__header--h3 {
+  font-size: 50px;
+}
+
+#cards {
+  width: 100% !important;
+}
+
+#form {
+  border-radius: 15px;
+}
+
+.card__body--p {
+  color: black !important;
+}

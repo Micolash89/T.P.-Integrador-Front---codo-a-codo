@@ -12,7 +12,6 @@
 
 .body__section--header {
   margin: 0 !important;
-  
 }
 
 .liHeader__a:hover {
@@ -64,10 +63,7 @@
   color: white;
 }
 
-
 /* carousel */
-
-
 
 .carousel {
   padding-top: 44px !important;
@@ -76,8 +72,8 @@
   overflow: hidden;
 }
 
-.carousel__div--video{
- margin: auto;
+.carousel__div--video {
+  margin: auto;
 }
 
 .carousel__div--img {
@@ -98,7 +94,7 @@
   padding-top: 8px;
 }
 
-#coach{
+#coach {
   padding-top: 70px;
 }
 
@@ -121,16 +117,16 @@
 .cardImg {
   width: 100%;
   border-radius: 4px;
- 
-  
 }
 
-.cardContainer1,.cardContainer2,.cardContainer3{
-  max-height: 304.250px;
+.cardContainer1,
+.cardContainer2,
+.cardContainer3 {
+  max-height: 304.25px;
   overflow: hidden;
 }
 
-.cardContainer3{
+.cardContainer3 {
   padding-top: 12%;
   background-color: black;
 }
@@ -160,11 +156,11 @@
   max-height: 450px;
 }
 
-#mapaSection{
+#mapaSection {
   padding-top: 57px;
 }
 
-.mainMapa__h2{
+.mainMapa__h2 {
   margin: 15px 0;
 }
 
@@ -219,12 +215,12 @@
   color: white;
 }
 
-.footerLi__a{
+.footerLi__a {
   color: #ffc107;
-  font-size: 2rem
+  font-size: 2rem;
 }
 
-.footer__ul{
+.footer__ul {
   display: flex;
   gap: 12px;
   margin-right: 50px;
@@ -233,7 +229,8 @@
 /* mobile */
 
 @media (max-width: 1000px) {
-  .carousel__div--img,.carousel__div--video {
+  .carousel__div--img,
+  .carousel__div--video {
     padding: 0 150px 0 150px;
     width: 75%;
     margin: auto;
@@ -245,62 +242,61 @@
     margin: auto;
   }
 
-  .cardContainer3{
+  .cardContainer3 {
     padding-top: 20%;
     background-color: black;
   }
 }
 
 @media (max-width: 1174px) {
-  .cardContainer3{
+  .cardContainer3 {
     padding-top: 25%;
     background-color: black;
   }
-
-
 }
 
-@media (max-width:990px) {
-  .botonDespegable{
+@media (max-width: 990px) {
+  .botonDespegable {
     background-color: #ffc107;
   }
 
-  .header__a{
+  .header__a {
     margin: 0;
   }
 
-  .cardContainer3{
+  .cardContainer3 {
     padding-top: 30%;
     padding-bottom: 30%;
     background-color: black;
   }
-
 }
 
 @media (max-width: 767px) {
+  .div1Cards,
+  .div2Cards,
+  .div3Cards {
+    width: 75%;
+    margin: auto;
+  }
 
-.div1Cards,.div2Cards,.div3Cards{
-  width: 75%;
-  margin: auto;
-
-}
-
-.cardContainer3{
-   padding:0;
-  
-}
-
+  .cardContainer3 {
+    padding: 0;
+  }
 }
 @media (max-width: 860px) {
   .body__section {
     position: static;
   }
 
-.carousel{
-  padding: 0 !important;
-}
+  .carousel {
+    padding: 0 !important;
+  }
 
-  #coach,#carousel,.main__carousel,.main__carousel--div,#mapaSection{
+  #coach,
+  #carousel,
+  .main__carousel,
+  .main__carousel--div,
+  #mapaSection {
     padding: 0;
   }
 
@@ -308,15 +304,14 @@
     display: block;
   }
 
-  .carousel__div--img,.carousel__div--video {
+  .carousel__div--img,
+  .carousel__div--video {
     padding: 0;
     width: 75%;
     height: 50%;
     margin: auto;
     padding: 0;
   }
-
-
 
   .main__cards {
     padding: 5%;
@@ -337,17 +332,11 @@
 }
 
 @media (max-width: 462px) {
-  
   .header__a--h1 {
     display: none;
   }
-
-  
-  
 }
 @media (max-width: 414px) {
-  
- 
   .header__a {
     margin-left: 35%;
   }
