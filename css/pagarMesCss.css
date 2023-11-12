@@ -21,9 +21,6 @@
   gap: 50px;
 }
 
-.select__div--input {
-}
-
 .mainForm__header--h2 {
   font-weight: 400;
 }
@@ -41,4 +38,12 @@
 
 .card__body--p {
   color: black !important;
+}
+
+@media (max-width: 646px) {
+  .descuento__Cards {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
 }
